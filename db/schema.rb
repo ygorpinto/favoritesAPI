@@ -12,18 +12,11 @@
 
 ActiveRecord::Schema.define(version: 2021_05_09_133036) do
 
-  create_table "caracters", force: :cascade do |t|
-    t.integer "favorite_id", null: false
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["favorite_id"], name: "index_caracters_on_favorite_id"
-  end
-
   create_table "favorites", force: :cascade do |t|
     t.string "name"
     t.string "telefone"
     t.string "social"
+    t.string "feetsize"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
