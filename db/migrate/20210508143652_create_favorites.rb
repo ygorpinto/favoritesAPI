@@ -4,7 +4,6 @@ class CreateFavorites < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :telefone
       t.string :social
-      t.string :feetsize
 
       t.timestamps
     end

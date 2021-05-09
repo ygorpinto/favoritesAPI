@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2021_05_09_133036) do
     t.string "name"
     t.string "telefone"
     t.string "social"
-    t.string "feetsize"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
