@@ -5,7 +5,7 @@ class FavoritesController < ApplicationController
   def index
     @favorites = Favorite.all
 
-    render json: @favorites, only:[:name,:telefone,:social,:feetsize]
+    render json: @favorites
   end
 
   # GET /favorites/1
