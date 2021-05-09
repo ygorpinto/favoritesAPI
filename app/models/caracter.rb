@@ -1,3 +1,3 @@
 class Caracter < ApplicationRecord
-  belongs_to :favorite
+  belongs_to :favorites
 end
