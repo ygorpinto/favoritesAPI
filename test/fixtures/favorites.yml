@@ -2,10 +2,6 @@
 
 one:
   name: MyString
-  telefone: MyString
-  social: MyString
 
 two:
   name: MyString
-  telefone: MyString
-  social: MyString

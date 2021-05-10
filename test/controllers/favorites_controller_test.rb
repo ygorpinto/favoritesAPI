@@ -12,7 +12,7 @@ class FavoritesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create favorite" do
     assert_difference('Favorite.count') do
-      post favorites_url, params: { favorite: { name: @favorite.name, social: @favorite.social, telefone: @favorite.telefone } }, as: :json
+      post favorites_url, params: { favorite: { name: @favorite.name } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class FavoritesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update favorite" do
-    patch favorite_url(@favorite), params: { favorite: { name: @favorite.name, social: @favorite.social, telefone: @favorite.telefone } }, as: :json
+    patch favorite_url(@favorite), params: { favorite: { name: @favorite.name } }, as: :json
     assert_response 200
   end
 
