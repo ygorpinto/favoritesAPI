@@ -18,14 +18,6 @@ ActiveRecord::Schema.define(version: 2021_05_10_161724) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "feetsizes", force: :cascade do |t|
-    t.integer "favorite_id", null: false
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["favorite_id"], name: "index_feetsizes_on_favorite_id"
-  end
-
   create_table "infos", force: :cascade do |t|
     t.integer "favorite_id", null: false
     t.string "feetsize"
@@ -35,6 +27,5 @@ ActiveRecord::Schema.define(version: 2021_05_10_161724) do
     t.index ["favorite_id"], name: "index_infos_on_favorite_id"
   end
 
-  add_foreign_key "feetsizes", "favorites"
   add_foreign_key "infos", "favorites"
 end
