@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-    def index
-        render json: "running, the routes are below ..."
-    end
+  def index
+    render json: "Favorites API"
+  end
 end
